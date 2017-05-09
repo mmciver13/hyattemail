@@ -1,0 +1,164 @@
+/* ######### compatibility ######### */
+
+body {
+  margin: 0 !important; /* helps with an alignment issue on Android KitKat */
+  padding: 0; /* helps with an alignment issue on Android KitKat */
+}
+
+table {
+  border-spacing: 0; /* take the place of the cellpadding and cellspacing HTML attributes */
+}
+td {
+  padding: 0; /* take the place of the cellpadding and cellspacing HTML attributes */
+}
+img {
+  border: 0; /* removes borders on linked images */
+}
+
+div[style*="margin: 16px 0"] {
+  margin:0 !important; /* zeroes some unwanted padding in Android 4.4’s native mail client. */
+}
+
+.wrapper {
+  width: 100%; /* centers in yahoo mail. */
+  table-layout: fixed; /* centers in yahoo mail. */
+  -webkit-text-size-adjust: 100%; /* stop text resizing in a weird way on Windows Phones and iOS. */
+  -ms-text-size-adjust: 100%; /* stop text resizing in a weird way on Windows Phones and iOS. */
+}
+.webkit {
+  max-width: 600px; /* used to contain everything in Apple Mail 6 (and below) and Outlook 2011. */
+  margin: 0 auto; /* also centers in yahoo mail. */
+}
+
+/* #################################*/
+/* ######### begin styles ######### */
+/* #################################*/
+
+/* ######### structure ######### */
+body, .wrapper {
+  background-color:#E3DDD7;
+  font-family:"Georgia", "Times New Roman", serif;
+  box-sizing:border-box;
+  color:#000000;
+}
+
+a, a:visited, a:hover, a:focus {
+  text-decoration:none;
+}
+
+.wrapper {
+  padding:50px;
+}
+
+.outer {
+  background-color:#fff;
+  padding:25px;
+  Margin:0 auto; /* weird fix so outlook won't strip out this tag */
+  width:100%;
+  max-width:700px;
+}
+
+img {
+  height:auto !important;
+  margin:0 auto;
+}
+
+table {
+  width:100%;
+}
+
+/* ######### typography ######### */
+h1 {
+  font-family:"Georgia", "Times New Roman", serif;
+  font-size: 33px;
+  color: #000000;
+  font-weight:normal;
+  text-align:center;
+}
+
+.subhead {
+  font-family: "TrebuchetMS", "Arial", sans-serif;
+  font-size: 18px;
+  color: #BDAFA1;
+  letter-spacing: 3px;
+  text-align:center;
+  display:block;
+  text-transform:uppercase;
+}
+
+p {
+  font-family:"Georgia", "Times New Roman", serif;
+  font-size: 16px;
+  color: #000000;
+  letter-spacing: 2px;
+  line-height: 23px;
+  text-align:center;
+}
+
+.button span {
+  margin:0 auto;
+  text-align:center;
+}
+
+.txt-nav {
+  font-family: "TrebuchetMS", "Arial", serif;
+  font-size: 10px;
+  color: #000000;
+  letter-spacing: 1px;
+  line-height: 30px;
+  text-transform:uppercase;
+  height:30px;
+}
+
+/* ######### row overrides ######### */
+.txt-center {
+  text-align:center;
+}
+
+td {
+  padding:30px;
+}
+
+.bottom-border {
+  border-bottom:1px solid #000;
+  padding-bottom:30px;
+}
+
+.nav-box {
+  padding:10px;
+}
+
+/* ######### footer ######### */
+.txt-foot {
+  font-family: "TrebuchetMS", "Arial", sans-serif;
+  font-size: 12px;
+  color: #72726D;
+  letter-spacing: 0.6px;
+  line-height: 18px;
+}
+
+/* ######### cta ######### */
+.cta-box {
+  padding:80px;
+  color:#fff;
+  background-color:#91B6CE
+}
+
+/* ######### colors ######### */
+.txt-white {
+  color:#fff !important;
+}
+.txt-black {
+  color:#000 !important;
+}
+
+/* ######### responsive ######### */
+
+@media (max-width:676px;) {
+  td.fullwidth-mobile {
+    display:block;
+  }
+  .wrapper {
+
+  }
+}

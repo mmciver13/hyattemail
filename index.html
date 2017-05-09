@@ -2,185 +2,207 @@
 <html>
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>*|MC:SUBJECT|*</title>
-    <style type="text/css">
-
-    /* ========== Column Styles ========== */
-
-    .templateColumnContainer{display:inline; width:260px;}
-
-    /**
-    * @tab Columns
-    * @section column style
-    * @tip Set the background color and borders for your email's column area.
-    */
-    #templateColumns{
-      /*@editable*/ background-color:#F4F4F4;
-      /*@editable*/ border-top:1px solid #FFFFFF;
-      /*@editable*/ border-bottom:1px solid #CCCCCC;
-    }
-
-    /**
-    * @tab Columns
-    * @section left column text
-    * @tip Set the styling for your email's left column content text. Choose a size and color that is easy to read.
-    */
-    .leftColumnContent{
-      /*@editable*/ color:#505050;
-      /*@editable*/ font-family:Helvetica;
-      /*@editable*/ font-size:14px;
-      /*@editable*/ line-height:150%;
-      padding-top:0;
-      padding-right:0;
-      padding-bottom:20px;
-      padding-left:0;
-      /*@editable*/ text-align:left;
-    }
-
-    /**
-    * @tab Columns
-    * @section left column link
-    * @tip Set the styling for your email's left column content links. Choose a color that helps them stand out from your text.
-    */
-    .leftColumnContent a:link, .leftColumnContent a:visited, /* Yahoo! Mail Override */ .leftColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-      /*@editable*/ color:#EB4102;
-      /*@editable*/ font-weight:normal;
-      /*@editable*/ text-decoration:underline;
-    }
-
-    /**
-    * @tab Columns
-    * @section right column text
-    * @tip Set the styling for your email's right column content text. Choose a size and color that is easy to read.
-    */
-    .rightColumnContent{
-      /*@editable*/ color:#505050;
-      /*@editable*/ font-family:Helvetica;
-      /*@editable*/ font-size:14px;
-      /*@editable*/ line-height:150%;
-      padding-top:0;
-      padding-right:0;
-      padding-bottom:20px;
-      padding-left:0;
-      /*@editable*/ text-align:left;
-    }
-
-    /**
-    * @tab Columns
-    * @section right column link
-    * @tip Set the styling for your email's right column content links. Choose a color that helps them stand out from your text.
-    */
-    .rightColumnContent a:link, .rightColumnContent a:visited, /* Yahoo! Mail Override */ .rightColumnContent a .yshortcuts /* Yahoo! Mail Override */{
-      /*@editable*/ color:#EB4102;
-      /*@editable*/ font-weight:normal;
-      /*@editable*/ text-decoration:underline;
-    }
-
-    .leftColumnContent img, .rightColumnContent img{
-      display:inline;
-      height:auto;
-      max-width:260px;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
-    <img src="./logo.png">
-    <nav>
-      <a href="/about">About</a>
-      <a href="/#treatments">Spa Treatments</a>
-      <a href="/services">Salon Services</a>
-      <a href="/contact">Contact</a>
-    </nav>
+    <div class="wrapper">
 
-    <!-- Section 1 -->
-    <div style="border-top; 1px: border-top-width;600px: border-top-style; solid: border-top-color; #000:"></div>
-      <div>
-        <h2>Ritual</h2>
-        <h1>Manicure & Pedicure</h1>
-        <img src="./scalp.jpeg">
-        <p>
-          In addition to your choice of mani or pedi, you’ll experience a pure
-          organic jojoba oil soak, an antiaging exfoliating scrub, and a hydrating
-          seasonal mask paired with an extended hand massage.
-          Manicure: 45 minutes • Pedicure: 65 minute
-        </p>
-      </div>
-      <div class="button">
-        <a href="/bookpedicure.html">Book Now</a>
-      </div>
-
-      <!-- Section 2 -->
-      <div style="border-top; 1px: border-top-width;600px: border-top-style; solid: border-top-color; #000:"></div>
-        <div>
-          <h2>Subhead Placeholder</h2>
-          <h1>Headline Placholder</h1>
-          <img src="./scalp.jpeg">
-          <p>
-            In addition to your choice of mani or pedi, you’ll experience a pure
-            organic jojoba oil soak, an antiaging exfoliating scrub, and a hydrating
-            seasonal mask paired with an extended hand massage.
-            Manicure: 45 minutes • Pedicure: 65 minute
-          </p>
-        </div>
-        <div class="button">
-          <a href="/bookpedicure.html">Book Now</a>
-        </div>
-
-        <!-- Section 3 -->
-        <tr>
-            <td align="center" valign="top">
-                <!-- BEGIN COLUMNS // -->
-                  <table border="0" cellpadding="20" cellspacing="0" width="100%" id="templateColumns">
-                    <tr mc:repeatable>
-                        <td align="left" valign="top" style="padding-bottom:0;">
-                            <table align="left" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer">
-                                <tr>
-                                    <td class="leftColumnContent">
-                                        <img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="left_column_image" mc:edit="left_column_image" />
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                    <td valign="top" class="leftColumnContent" mc:edit="left_column_content">
-                                          <h3>Repeatable Content</h3>
-                                          <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                          <br />
-                                          <br />
-                                          You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                      </td>
-                                  </tr>
-                              </table>
-                            <table align="right" border="0" cellpadding="0" cellspacing="0" class="templateColumnContainer">
-                                <tr>
-                                    <td class="rightColumnContent">
-                                        <img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/header_placeholder_260px.png" style="max-width:260px;" class="columnImage" mc:label="right_column_image" mc:edit="right_column_image" />
-                                      </td>
-                                  </tr>
-                                  <tr>
-                                    <td valign="top" class="rightColumnContent" mc:edit="right_column_content">
-                                          <h3>Repeatable Content</h3>
-                                          <a href="http://kb.mailchimp.com/article/how-do-i-work-with-repeatable-content-blocks" target="_blank">Repeatable sections</a> are noted with plus and minus signs so that you can add and subtract content blocks.
-                                          <br />
-                                          <br />
-                                          You can also get a little fancy; repeat blocks and remove all text to make image galleries, or do the opposite and remove images for text-only blocks.
-                                      </td>
-                                  </tr>
-                              </table>
-                          </td>
-                      </tr>
-                  </table>
-                  <!-- // END COLUMNS -->
-              </td>
+      <div class="outer">
+        <table>
+          <tr class="bottom-border nav-box">
+            <td class="bottom-border nav-box" class="txt-center">
+              <img src="assets/bottom-logo-160x48.png" width="160px" height="48px" />
+            </td>
+            <td class="bottom-border nav-box" class="txt-center">
+              <a href="#" class="txt-nav">
+                About
+              </a>
+            </td>
+            <td class="bottom-border nav-box" class="txt-center">
+              <a href="#" class="txt-nav">
+                Spa Treatments
+              </a>
+            </td>
+            <td class="bottom-border nav-box" class="txt-center">
+              <a href="#" class="txt-nav">
+                Salon Services
+              </a>
+            </td>
+            <td class="bottom-border nav-box" class="txt-center">
+              <a href="#" class="txt-nav">
+                Contact
+              </a>
+            </td>
           </tr>
+        </table>
 
-          <!-- CTA -->
-            <div>
-              <h2>Looking for more spa treatments?</h2>
-              <h1>We offer a full-service menu</h1>
-              <img src="./scalp.jpeg">
-            </div>
-            <div class="button">
-              <a href="/bookpedicure.html">Visit Site</a>
-            </div>
+        <table>
+          <!-- main row: 1 column -->
+          <tr mc:hideable mc:repeatable>
+            <td class="bottom-border" colspan="2">
+              <span class="subhead" mc:edit="subhead">
+                Subhead
+              </span>
+              <h1 mc:edit="header">
+                Main header
+              </h1>
+              <img src="assets/image-placeholder-633x482.png" width="633px" height="482x" mc:edit="cover" mc:hideable />
+              <p mc:edit="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <span class="button" mc:repeatable mc:edit="cta" mc:hideable>
+                <center>
+                  <!--[if mso]>
+                  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{###EDIT_URL###}}"  arcsize="11%" stroke="f" fillcolor="#91B6CE" style="height:53px;v-text-anchor:middle;width:250px;" >
+                  <w:anchorlock/>
+                  <center>
+                  <![endif]-->
+                    <span mc:edit="cta"  style="background-color:#91B6CE;margin-top:15px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:light;line-height:53px;text-align:center;text-decoration:none;width:250px;-webkit-text-size-adjust:none;border:1px solid #fff;" >
+                      Call to Action
+                    </span>
+                  <!--[if mso]>
+                  </center>
+                  </v:roundrect>
+                  <![endif]-->
+                </center>
+              </span>
+            </td>
+          </tr>
+          <!-- /main row: 1 column -->
 
+          <!-- main row: 2 column -->
+          <tr mc:hideable mc:repeatable>
+            <td class="bottom-border" colspan="1">
+              <span class="subhead txt-black" mc:edit="subhead">
+                Subhead
+              </span>
+              <img src="assets/image-placeholder-225x292.png" width="292px" height="225px" mc:edit="cover" mc:hideable />
+              <p mc:edit="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+
+              <span class="button" mc:repeatable mc:edit="cta" mc:hideable>
+                <center>
+                  <!--[if mso]>
+                  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{###EDIT_URL###}}"  arcsize="11%" stroke="f" fillcolor="#91B6CE" style="height:53px;v-text-anchor:middle;width:250px;" >
+                  <w:anchorlock/>
+                  <center>
+                  <![endif]-->
+                    <span mc:edit="cta"  style="background-color:#91B6CE;margin-top:15px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:light;line-height:53px;text-align:center;text-decoration:none;width:250px;-webkit-text-size-adjust:none;border:1px solid #fff;" >
+                      Call to Action
+                    </span>
+                  <!--[if mso]>
+                  </center>
+                  </v:roundrect>
+                  <![endif]-->
+                </center>
+              </span>
+            </td>
+            <td class="bottom-border" colspan="1">
+              <span class="subhead txt-black" mc:edit="subhead">
+                Subhead
+              </span>
+              <img src="assets/image-placeholder-225x292.png" width="292px" height="225px" mc:edit="cover" mc:hideable />
+              <p mc:edit="content">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <span class="button" mc:repeatable mc:edit="cta" mc:hideable>
+                <center>
+                  <!--[if mso]>
+                  <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{###EDIT_URL###}}"  arcsize="11%" stroke="f" fillcolor="#91B6CE" style="height:53px;v-text-anchor:middle;width:250px;" >
+                  <w:anchorlock/>
+                  <center>
+                  <![endif]-->
+                    <span mc:edit="cta"  style="background-color:#91B6CE;margin-top:15px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:light;line-height:53px;text-align:center;text-decoration:none;width:250px;-webkit-text-size-adjust:none;border:1px solid #fff;" >
+                      Call to Action
+                    </span>
+                  <!--[if mso]>
+                  </center>
+                  </v:roundrect>
+                  <![endif]-->
+                </center>
+              </span>
+            </td>
+          </tr>
+          <!-- /main row: 2 column -->
+
+          <!-- cta row: 1 column -->
+          <tr>
+            <td colspan="2">
+              <div class="cta-box">
+                <span class="subhead txt-white" mc:edit="subhead">
+                  Subhead
+                </span>
+                <h1 class="txt-white" mc:edit="header">
+                  Main header
+                </h1>
+                <span class="button" mc:repeatable mc:edit="cta" mc:hideable>
+                  <center>
+                    <!--[if mso]>
+                    <v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="{{###EDIT_URL###}}"  arcsize="11%" stroke="f" fillcolor="#91B6CE" style="height:53px;v-text-anchor:middle;width:250px;" >
+                    <w:anchorlock/>
+                    <center>
+                    <![endif]-->
+                      <span mc:edit="cta"  style="background-color:#91B6CE;margin-top:15px;color:#ffffff;display:inline-block;font-family:sans-serif;font-size:16px;font-weight:light;line-height:53px;text-align:center;text-decoration:none;width:250px;-webkit-text-size-adjust:none;border:1px solid #fff;" >
+                        Call to Action
+                      </span>
+                    <!--[if mso]>
+                    </center>
+                    </v:roundrect>
+                    <![endif]-->
+                  </center>
+                </span>
+              </div>
+            </td>
+          </tr>
+          <!-- /cta row: 1 column -->
+
+          <!-- social row: 1 column -->
+          <tr>
+            <td colspan="2">
+              <div>
+                <span class="subhead" mc:edit="subhead">
+                  Subhead
+                </span>
+                <p>
+                  <a href="#" target="_blank">
+                    <img src="assets/fb.png" width="27px" height="27px" />
+                  </a>
+                  <a href="#" target="_blank">
+                    <img src="assets/pinterest.png" width="27px" height="27px" />
+                  </a>
+                  <a href="#" target="_blank">
+                    <img src="assets/twitter.png" width="27px" height="27px" />
+                  </a>
+                </p>
+              </div>
+            </td>
+          </tr>
+          <!-- /social row: 1 column -->
+
+          <!-- footer row: 1 column -->
+          <tr>
+            <td class="txt-center" colspan="2">
+              <div>
+                <img src="assets/bottom-logo-160x48.png" width="160px" height="48px" />
+                <p class="txt-foot">
+                  111 Country Club Drive<br />
+                  Incline Village, NV 89451
+                </p>
+                <p class="txt-foot">
+                  p: 775.832.1234
+                </p>
+                <p class="txt-foot">
+                  You are receiving this email because you subscribed or opted in at stillwaterspa.com.
+                  You can unsubscribe at any time. Copyright © 2017 Hyatt Resort @ Tahoe | Stillwater Spa, All rights reserved.
+                </p>
+              </div>
+            </td>
+          </tr>
+          <!-- /footer row: 1 column -->
+        </table>
+      </div>
+
+    </div>
   </body>
 </html>
